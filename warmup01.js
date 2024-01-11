@@ -14,7 +14,7 @@ let myPartnerName = function (firstname, lastname) {
 
 // arrow function 
 
-let PartnerName2 = (firstName, lastName) => {
+let PartnerName2 = (firstname, lastname) => {
 	return firstname + " " + lastname
 	// write your code 
 }
@@ -33,7 +33,7 @@ function MultipleOf13orNot(num1) {
 //write your code
 
 // function expression 
-let MultipleOf13orNot= function (num1) {
+let MultipleOf13orNot2= function (num1) {
 	let num2 = 13
 	if (num1 % num2 === 0) {
 		return true;
@@ -45,7 +45,7 @@ let MultipleOf13orNot= function (num1) {
 
 
 // arrow function 
-let MultipleOf13orNot=(num1)=> {
+let MultipleOf13orNot3=(num1)=> {
 	let num2 = 13
 	if (num1 % num2 === 0) {
 		return true;
@@ -56,20 +56,20 @@ let MultipleOf13orNot=(num1)=> {
 }
 // 4-create a function that takes a age as a parametre and return that age in seconds.*//
 
-function AgeInSeconds(age) {
+function AgeInSeconds1(age) {
 return age = age*365*24*60*60
 	//write your code
 }
 
 // function expression
-let AgeInSeconds = function (age){
+let AgeInSeconds2 = function (age){
 	return age = age*365*24*60*60
 
 }
 
 
 // arrow function 
-let AgeInSeconds = (age)=>{
+let AgeInSeconds3 = (age)=>{
 	return age = age*365*24*60*60
 
 }
