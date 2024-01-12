@@ -8,12 +8,14 @@ function cube(x) {
  * 2 - Write a function sameLength that accepts two strings as arguments, and returns true if those strings have the
 //   same length, and false otherwise.
  */
-function sameLength(str, str1) {      
-    if (str.Lenght === str1.Lenght){
-    return true
-}
-else return false
-}
+function sameLength(str, str1) {
+    if (str.length === str1.length) {
+      return true
+    } else {
+      return false
+    }
+  }
+
 /**
  * 3 - Write a function called scoreToGrade that accepts a number as a parameter and returns a string representing a 
  * letter grade corresponding to that score.
