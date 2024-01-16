@@ -11,8 +11,20 @@
  * @return {string}
  */
 
-function helloWorld(str){
-}
+let helloWorldzz=(str)=>{
+        if (str==="fr") {
+          return 'Bonjour tout le monde' ;  
+        } 
+        else if (str==="es") {
+          return 'Hola, Mundo';
+        }
+         else if (str==="en") {
+          return 'Hello, World';
+        } else {
+          return 'choos a valid language';
+        }
+      }
+
 
 
 /**
@@ -38,5 +50,7 @@ function reverseStr(str){
  * @return {string}
  */
 
-function laugh(num){
-}
+let laugh = (num)=> {
+    const word = ("ha");
+   return (` ${word.repeat(num)}`)
+} 
