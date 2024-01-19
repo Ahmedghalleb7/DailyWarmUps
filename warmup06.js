@@ -3,18 +3,28 @@
  * ex: reverseArray([1,2,3]) ==> [3,2,1]
  */
 let reverseArray=(array)=> {
-
+let result =[]
+for (let i = 0; i = array.length;i++) {
+    result.push(array.pop())
+}
+return result
 }
 
 
 /**
- * 2 - Write a function called counter that, when invoked, always returns a number that is one more than the previous invocation. For instance:
+ * 2 - Write a function called counter that, when invoked, always returns a number that is oneB more than the
+ *  previous invocation. For instance:
  * counting(5); // => '1, 2, 3, 4, 5'
  * counting(1); // => '1'
  * counting(3); // => '1, 2, 3'
  */
 
 let countring = (number) => {
+//     let result=0
+//     for (let i = 1; i <= number; i++) {
+// result+=result
+//     }
+// return result
 
 }
 
@@ -26,8 +36,12 @@ let countring = (number) => {
  */
 
  function midElement(array) {
-   
-
+   let result=[]
+   for (let i = 0; i <=array.length; i++) {
+    let middle=array[Math.floor(array.length / 2)]
+result= middle
+   }
+return result
 }
 
 /**
@@ -40,7 +54,12 @@ let countring = (number) => {
 
   
 function sameLength(array) {
-  
+//     let result=[]
+//     for (let i = 0; i <=array.length; i++) {
+//      if 
+//     }
+//  return result
+ 
 }
 
 /**

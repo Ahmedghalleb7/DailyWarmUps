@@ -6,9 +6,13 @@
  * @return {Array}
  */
 
-let reverseArray = (array ) => {
-
-}
+let reverseArray1=(array)=> {
+    let result =[]
+    for (let i = 0; i = array.length;i++) {
+        result.push(array.pop())
+    }
+    return result
+    }
 
 /**
  * 2 - Write a function named objKey that take an object as a parameter and returns an array containing the keys of the object
@@ -20,7 +24,7 @@ let reverseArray = (array ) => {
  */
 
 let objKey=(object)=>{
-   
+   return object.keys(object)
 }
 
 /**
@@ -31,8 +35,8 @@ let objKey=(object)=>{
  * @param {Object} obj
  * @return number
  */
-let objLength=(obj) =>{
-
+let objLength = (obj) => {
+    return Object.keys(obj).length
 }
 
 
@@ -48,6 +52,6 @@ let objLength=(obj) =>{
  * @param {number} n
  * @return {Array}
  */
-let findAll = function (array, n) {
+let findAll2 = function (array, n) {
   
 };
