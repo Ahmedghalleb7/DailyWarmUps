@@ -24,7 +24,13 @@ let reverseArray1=(array)=> {
  */
 
 let objKey=(object)=>{
-   return object.keys(object)
+    result=[]
+    for (let i = 0; i <= object.keys.length; i++) {
+        result=[object.keys]
+        
+    }
+    return result 
+
 }
 
 /**
