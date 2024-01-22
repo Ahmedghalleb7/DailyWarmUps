@@ -7,7 +7,12 @@
  * @return {Array}
  */
 
-function objKey(object){
+function objKey1(object){
+    let array = []
+    for (let key in object){
+        array.push(key)
+    }
+    return array
 }
 
 
@@ -20,7 +25,9 @@ function objKey(object){
  * @param {Object} obj
  * @return number
  */
-function objLength(obj) {
+function objLength1(obj) {
+    let count = obj.length 
+    return count
   
 }
 
@@ -38,6 +45,12 @@ function objLength(obj) {
 
 
 function objSort(array){
-
+for (let i = 0; i < array.length; i++) {
     
+    for (let id in array[i] ){
+     (array[i][id].sort()) 
+
+}
+return array
+}
 }

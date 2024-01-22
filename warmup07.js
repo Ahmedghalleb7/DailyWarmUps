@@ -24,9 +24,9 @@ let reverseArray1=(array)=> {
  */
 
 let objKey=(object)=>{
-    result=[]
-    for (let i = 0; i <= object.keys.length; i++) {
-        result=[object.keys]
+    let result=[]
+    for (let key in object) {
+        result.push(key)
         
     }
     return result 
@@ -43,6 +43,7 @@ let objKey=(object)=>{
  */
 let objLength = (obj) => {
     return Object.keys(obj).length
+    
 }
 
 
@@ -61,3 +62,23 @@ let objLength = (obj) => {
 let findAll2 = function (array, n) {
   
 };
+
+
+
+
+
+
+// IMMERCIVE
+// 5.Write a function called extend that takes two objects and adds all the properties of the second object to the first object if the property’s key does not already exist.
+
+function extend (object1,object2){
+
+    for(let key in object2){
+        if (object1[key]===undefined){
+        object1[key]=object2[key]
+    }
+
+    }
+    return object1
+    
+}
