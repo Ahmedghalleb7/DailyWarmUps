@@ -38,10 +38,14 @@ function sumOfFirstAndLast(number) {
 // returns the first number multiplied by 10 the amount of times indicated by the second number.
 
 function multiplyBy10NTimes(num, n) {
+<<<<<<< HEAD
 let result =num
 for (let i = 1; i <=n; i++) {
      result *= 10
 
 }
 return result
+=======
+    
+>>>>>>> 61d00f2199b91bf11bb38676c16546ef869c691c
 } 

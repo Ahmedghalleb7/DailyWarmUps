@@ -46,6 +46,8 @@ let scoreToGrade2=(score)=> (score >= 90) ? 'A': (score >= 80) ?'B': (score >= 7
  * repeatString('dog', 2); // => 'dog' + 'dog' => 'dogdog'
  * repeatString('dog', 3); // => 'dog' + 'dog' + 'dog' => 'dogdogdog'
  */
+
+
 function repeatString(string, num) {
     const word = (string);
    return (` ${word.repeat(num)}`);
