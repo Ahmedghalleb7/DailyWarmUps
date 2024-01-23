@@ -26,10 +26,14 @@ function objKey1(object){
  * @return number
  */
 function objLength1(obj) {
-    let count = obj.length 
-    return count
-  
+   
+    let array = []
+    for (let key in obj){
+        array.push(key)
+    }
+    return array.length
 }
+
 
 
 
@@ -45,12 +49,5 @@ function objLength1(obj) {
 
 
 function objSort(array){
-for (let i = 0; i < array.length; i++) {
-    
-    for (let id in array[i] ){
-     (array[i][id].sort()) 
-
-}
-return array
-}
+return array.sort((a,b)=>a.id-b.id)
 }
