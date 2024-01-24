@@ -5,7 +5,19 @@
 //
 // Note : you can`t use any built-in functions .
 
-function reverseStr(str){
+function reverseStr2(str){
+    let result =""
+    let reverse=[];
+    let words = str.split(" ")
+    for (let i = words.length-1; i >= 0; i--) {
+        reverse.push(words[i]+" ");    
+    }
+    
+    for (let i = 0 ; i<reverse.length; i++){
+        result+=reverse[i]
+    }
+
+    return result
  } 
 
 
@@ -22,10 +34,17 @@ function reverseStr(str){
  * @param {Array} array
  * @param {number} n
  * @return {Array}
- */
+ */ 
 
 let findAll = function (array, n) {
- 
+ let arr=[]
+ for (let i=0 ; i<array.length;i++){
+    if (array[i]=== n){
+        arr.push(i)
+    }
+
+ }
+ return arr
 };
 
 
@@ -55,7 +74,7 @@ myCount.down() => 1
 myCount.counter => 1 
 **/ 
 
-let Counter = () => {
+let Counter1231 = () => {
   
 }
 
