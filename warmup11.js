@@ -22,8 +22,22 @@ myCount.counter => 1
 **/ 
 
 let Counter = () => {
-  
+  let obj={}
+  obj.counter=0,
+  obj.up=up,
+  obj.down=down
+  return obj
 }
+let up=function(){
+this.counter++
+return this.counter
+}
+let down=function(){
+    if (this.counter)
+    this.counter--
+return this.counter
+}
+
 
 // 3. Think about some different attributes of books – what do all books have? Ideas include:
 
@@ -54,7 +68,7 @@ let Counter = () => {
 //  displayBook(sorcerersStone); 
 //  // => 'Harry Potter and the Sorcerer's Stone, by J.K. Rowling -- fantasy, $24.99'
 
-let makeBook =(Title,Author,mSRP,Genre,numOfPages,Description)=>{
+let makeBook =(Title,Author,mSRP,Genre,numOfPages,Description,imageUrl)=>{
     let obj={}
     obj.Title=Title,
     obj.Author=Author,
@@ -62,12 +76,13 @@ let makeBook =(Title,Author,mSRP,Genre,numOfPages,Description)=>{
     obj.Genre=Genre,
     obj.numOfPages=numOfPages,
     obj.Description=Description
+    obj.imageUrl=imageUrl
     return obj
 }
 
-let harryPotter=makeBook("Harry Potter and the Sorcerer's Stone","J. K. Rowling","$6.08"," fantasy novel",309,"An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.")
-let Romeoandjuliet=makeBook("Romeo and Juliet","William Shakespeare","$8.88"," Tragedy",123,"Romeo and Juliet Summary. An age-old vendetta between two powerful families erupts into bloodshed. A group of masked Montagues risk further conflict by gatecrashing a Capulet party.")
-let SAIOCP=makeBook("Structure and Interpretation of Computer Programs","Gerald Jay Sussman & Julie Sussman & Hal Abelson","$49.50"," Textbook",657,"SICP focuses on discovering general patterns for solving specific problems, and building software systems that make use of those patterns.")
+let harryPotter=makeBook("Harry Potter and the Sorcerer's Stone","J. K. Rowling","$6.08"," fantasy novel",309,"An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.","https://www.bigw.com.au/medias/sys_master/images/images/h4e/hee/29656777588766.jpg")
+let Romeoandjuliet=makeBook("Romeo and Juliet","William Shakespeare","$8.88"," Tragedy",123,"Romeo and Juliet Summary. An age-old vendetta between two powerful families erupts into bloodshed. A group of masked Montagues risk further conflict by gatecrashing a Capulet party.","https://cdn.kobo.com/book-images/ca07820a-192c-4ec8-a3a6-684a3a7ee2e3/1200/1200/False/romeo-and-juliet-320.jpg")
+let SAIOCP=makeBook("Structure and Interpretation of Computer Programs","Gerald Jay Sussman & Julie Sussman & Hal Abelson","$49.50"," Textbook",657,"SICP focuses on discovering general patterns for solving specific problems, and building software systems that make use of those patterns.","https://m.media-amazon.com/images/I/71noXgc3kgL._AC_UF1000,1000_QL80_.jpg")
 
 function displayBook(book) {
     return `the book's Title is ${book.Title}.His author is ${book.Author}.It's price is ${book.mSRP} and the book genre is ${book.Genre}. It's ${book.numOfPages}pages. and it talks abour ${book.Description}`
