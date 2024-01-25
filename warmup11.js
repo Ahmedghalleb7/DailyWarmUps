@@ -8,7 +8,8 @@
  */
 
 
-function objSort(array){    
+function objSort1(array){    
+return array.sort((a,b)=> a.id-b.id)
 }
 
 /**2. write a closure function called Counter that have 2 behaviours and a state to check the counter and when invoked it increase or decrease the counter. 
@@ -52,3 +53,22 @@ let Counter = () => {
 //  } 
 //  displayBook(sorcerersStone); 
 //  // => 'Harry Potter and the Sorcerer's Stone, by J.K. Rowling -- fantasy, $24.99'
+
+let makeBook =(Title,Author,mSRP,Genre,numOfPages,Description)=>{
+    let obj={}
+    obj.Title=Title,
+    obj.Author=Author,
+    obj.mSRP=mSRP,
+    obj.Genre=Genre,
+    obj.numOfPages=numOfPages,
+    obj.Description=Description
+    return obj
+}
+
+let harryPotter=makeBook("Harry Potter and the Sorcerer's Stone","J. K. Rowling","$6.08"," fantasy novel",309,"An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.")
+let Romeoandjuliet=makeBook("Romeo and Juliet","William Shakespeare","$8.88"," Tragedy",123,"Romeo and Juliet Summary. An age-old vendetta between two powerful families erupts into bloodshed. A group of masked Montagues risk further conflict by gatecrashing a Capulet party.")
+let SAIOCP=makeBook("Structure and Interpretation of Computer Programs","Gerald Jay Sussman & Julie Sussman & Hal Abelson","$49.50"," Textbook",657,"SICP focuses on discovering general patterns for solving specific problems, and building software systems that make use of those patterns.")
+
+function displayBook(book) {
+    return `the book's Title is ${book.Title}.His author is ${book.Author}.It's price is ${book.mSRP} and the book genre is ${book.Genre}. It's ${book.numOfPages}pages. and it talks abour ${book.Description}`
+}

@@ -6,20 +6,34 @@
 // Note : you can`t use any built-in functions .
 
 function reverseStr2(str){
-    let result =""
-    let reverse=[];
+    let output =""
+    let container=[];
     let words = str.split(" ")
     for (let i = words.length-1; i >= 0; i--) {
-        reverse.push(words[i]+" ");    
+        container.push(words[i]+" ");    
     }
     
-    for (let i = 0 ; i<reverse.length; i++){
-        result+=reverse[i]
+    for (let i = 0 ; i<container.length; i++){
+        output+=container[i]
     }
 
-    return result
+    return output
  } 
 
+//  function reverseStr1(str){
+//     let output=""
+//     let container=[];
+//     let words=""
+//     for (let i =0; i<str.length,i++)
+//     if (i===str.length-1){
+//         words+=str[i]
+//         container.push(words)
+//     }
+// else if (str[i]===" "){
+//     container.push (words," ")
+
+// }
+//  }
 
 
 
@@ -59,9 +73,8 @@ let findAll = function (array, n) {
 
 
 function objSort(array){
-
-    
-}
+    return array.sort((a,b)=>a.id-b.id)
+    }
 
 
 
