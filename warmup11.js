@@ -8,8 +8,8 @@
  */
 
 
-function objSort1(array){    
-return array.sort((a,b)=> a.id-b.id)
+function objSort(array) {
+    return array.sort((a, b) => a.id - b.id)
 }
 
 /**2. write a closure function called Counter that have 2 behaviours and a state to check the counter and when invoked it increase or decrease the counter. 
@@ -19,7 +19,7 @@ myCount.up() => 1
 myCount.up() => 2 
 myCount.down() => 1 
 myCount.counter => 1 
-**/ 
+**/
 
 let Counter = () => {
   let obj={}
@@ -28,16 +28,20 @@ let Counter = () => {
   obj.down=down
   return obj
 }
-let up=function(){
-this.counter++
-return this.counter
-}
-let down=function(){
-    if (this.counter)
-    this.counter--
-return this.counter
+
+let up = function() {
+    this.counter++
+    return this.counter 
 }
 
+let down = function(){
+    if(this.counter) {
+         this.counter--
+    }
+   
+    return this.counter + " cannot go down"
+}
+let nassimCount = Counter() // instance 
 
 // 3. Think about some different attributes of books – what do all books have? Ideas include:
 
