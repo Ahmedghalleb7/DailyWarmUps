@@ -9,7 +9,16 @@
 function iterateAndLog(n) {
 
   // TODO: your work goes here
-
+let result =""
+for (let i = n; i>0; i--) {
+  if (i%2===0){
+    result +=i+" is even"
+  }
+  else result += i+ " is odd"
+  
+  
+}
+return result
 }
 
  // RECURSIVELY
@@ -63,3 +72,22 @@ function fib(number) {
 // Change the current book to be the next book to be read
 // Change the next book to be read property to be the first unread book you find in the list of books
 // Booklists and Books might need more methods than that. Try to think of more that might be useful.
+
+
+let Book=()=> {
+ prop(title,genre,author,read,readDate)
+    this.title=title
+    this.genre=genre
+    this.author=author
+    this.read=false
+    this.readDate=""
+  }
+
+let BookList=()=> {
+prop()
+  this.readBooks=0
+  this.unreadBooks=0
+  this.nextBook=[]
+  this.currentBook=[]
+  this.lastBook=[]
+}
